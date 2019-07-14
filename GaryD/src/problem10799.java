@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Stack;
 
 /*
 	여러 개의 쇠막대기를 레이저로 절단하려고 한다. 효율적인 작업을 위해서 쇠막대기를 아래에서 위로 겹쳐 놓고, 레이저를 위에서 수직으로 발사하여 쇠막대기들을 자른다. 쇠막대기와 레이저의 배치는 다음 조건을 만족한다.
@@ -18,10 +19,23 @@ public class problem10799 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int cnt = sc.nextInt();
-		
-		
+		String str = sc.nextLine();
+		Stack st = new Stack();
+		int result = 0;
 
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == '(') {
+				st.push('(');
+			} else if (str.charAt(i) == ')') {
+				if (str.charAt(i - 1) == '(') {
+					st.pop();
+					result += st.size();
+				} else {
+					st.pop();
+					result += 1;
+				}
+			}
+		}
+		System.out.println(result);
 	}
-
 }
