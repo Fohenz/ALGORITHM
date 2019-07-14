@@ -41,6 +41,5 @@ public class problem9012 {
 		else {
 			return "YES";
 		}
-		
 	}
 }
