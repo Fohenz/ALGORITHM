@@ -26,7 +26,7 @@ public class problem1158 {
 		int length = Integer.parseInt(strArr[0]);
 		int cnt = Integer.parseInt(strArr[1]);
 		for (int i = 0; i < length; i++) {
-			qu.add(i+1);
+			qu.add(i+1);          
 		}
 		
 		int count = 1;
