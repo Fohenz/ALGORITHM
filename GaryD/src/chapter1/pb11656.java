@@ -1,0 +1,28 @@
+package chapter1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class pb11656 {
+
+	public static void main(String[] args) throws IOException {
+		String S;
+
+		ArrayList<String> suffixArr = new ArrayList<String>();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		S = br.readLine();
+
+		for (int i = 0; i < S.length(); i++) {
+			suffixArr.add(S.substring(i, S.length()));
+		}
+
+		Collections.sort(suffixArr);
+
+		for (String suffix : suffixArr) {
+			System.out.println(suffix);
+		}
+	}
+}
