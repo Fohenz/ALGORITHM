@@ -3,10 +3,12 @@ LG CNS ALGORITHM STUDY
 LG CNS 알고리즘 스터디입니다.
 
 # MEMBERS
-* 김윤수
-* 윤연주
+* ~~김윤수~~
+* ~~윤연주~~
 * 이강민
 * 이애린
+* 최형근
+* 이은
 
 # LECTURE
 - 백준 알고리즘 
