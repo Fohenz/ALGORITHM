@@ -1,3 +1,5 @@
+// 프로그래머스 : 타겟 
+
 class Solution {
     static int count= 0;
     
