@@ -1,3 +1,5 @@
+// 1952. 수영장
+
 import java.util.Scanner;
 
 public class Solution {
