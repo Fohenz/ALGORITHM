@@ -1,6 +1,3 @@
-import sys
-
-
 def dfs(fees, plans, month, money):
     global minFee
     if money > minFee:
@@ -17,7 +14,6 @@ def dfs(fees, plans, month, money):
         m3 = dfs(fees, plans, month+3, money + fees[2])
         return min(d, m, m3)
 
-
 T = int(input())
 minFee = 0
 
@@ -25,7 +21,6 @@ minFee = 0
 for test_case in range(1, T + 1):
     fees = list(map(int, input().split()))
     plans = list(map(int, input().split()))
-    global minFee
     minFee = fees[-1]
     print("#{} {}".format(test_case, dfs(fees, plans, 0, 0)))
 
