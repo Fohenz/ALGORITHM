@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 class Solution {
     public long solution(int N) {
         long answer = 0;
